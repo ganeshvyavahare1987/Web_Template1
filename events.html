@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Events</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Upcoming Events</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+ 
+  <section id="eventList" class="grid"></section>
+ <button onclick="openBookingForm('Dubai Run 2025')">Book Now</button>
+  <div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeBookingForm()" class="close">&times;</span>
+    <h3 id="eventTitle">Book Event</h3>
+    <form onsubmit="submitBooking(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="number" placeholder="Number of Tickets" required />
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+  <script src="js/script.js"></script>
+</body>
+</html>
